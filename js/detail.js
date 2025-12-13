@@ -102,7 +102,7 @@ function renderSocialMedia(data) {
         xhsContainer.innerHTML = data.xiaohongshu_posts.map(post => `
             <div class="post-item">
                 <div class="post-title">
-                    <a href="${post.url}" target="_blank" rel="noopener noreferrer">${post.title}</a>
+                    ${post.title}
                 </div>
                 <div class="post-meta">
                     <span>发布时间：${post.publish_date}</span>
