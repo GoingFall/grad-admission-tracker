@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>申请项目信息 - 项目列表</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>申请项目信息</h1>
+            <p class="subtitle">研究生申请项目信息汇总</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="controls">
+            <div class="sort-controls">
+                <label for="sort-select">排序方式：</label>
+                <select id="sort-select">
+                    <option value="admission_rate_desc">录取概率（高→低）</option>
+                    <option value="admission_rate_asc">录取概率（低→高）</option>
+                    <option value="university">大学名称</option>
+                    <option value="deadline">申请截止日期</option>
+                </select>
+            </div>
+            <div class="project-count">
+                <span id="project-count">共 <strong>0</strong> 个项目</span>
+            </div>
+        </div>
+
+        <div id="projects-container" class="projects-grid">
+            <!-- 项目卡片将通过JavaScript动态加载 -->
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 申请项目信息</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
+

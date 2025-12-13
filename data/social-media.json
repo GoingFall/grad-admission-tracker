@@ -1,0 +1,65 @@
+{
+  "香港中文大学-科学人工智能": {
+    "xiaohongshu_posts": [
+      {
+        "title": "港中文申请季再推出新硕士，又和AI相关",
+        "publish_date": "11-15",
+        "author": "雷哥",
+        "likes": "5",
+        "url": "https://www.xiaohongshu.com/search_result/69188ef5000000000d0367b6"
+      },
+      {
+        "title": "26fall港中深要开新的人工智能专业啦！",
+        "publish_date": "08-13",
+        "author": "九月在写文书(理工科版)",
+        "likes": "14",
+        "url": "https://www.xiaohongshu.com/search_result/689ca2ad000000001c0076fd"
+      },
+      {
+        "title": "港中文ai offer➕1",
+        "publish_date": "10-16",
+        "author": "爱吃牛肉（实习版）",
+        "likes": "69",
+        "url": "https://www.xiaohongshu.com/search_result/68f05e46000000000300e8f0"
+      }
+    ],
+    "zhihu_posts": [
+      {
+        "title": "香港中文大学新开科学人工智能硕士！",
+        "publish_date": "11-18",
+        "likes": "0",
+        "answers": "-",
+        "url": "https://zhuanlan.zhihu.com/p/1974148441736254919",
+        "summary": "寰中教育NancySun：【香港留学资讯】--香港中文大学香港中文大学新增专业：MSc in Artificial Intelligence"
+      },
+      {
+        "title": "香港中文大学26fall新增科学人工智能硕士！",
+        "publish_date": "11-20",
+        "likes": "0",
+        "answers": "-",
+        "url": "https://zhuanlan.zhihu.com/p/1974867112473409450",
+        "summary": "传兮留学Transit：商业与金融科技中的智能体人工智能 ● 物联网系统算法与实现 ● 边缘人工智能与应用 ● 科学人工智能 ● 计算成像系统与算法"
+      }
+    ],
+    "summary": {
+      "项目特点": "1. **新开专业**：这是香港中文大学26fall新增的专业，属于科学人工智能方向\n2. **学制与费用**：1.5年制，学费约35万港币\n3. **申请优势**：作为新开专业，申请难度相对较低，适合\"捡漏\"\n4. **港中深同步**：香港中文大学（深圳）也同步开设了类似专业"
+    }
+  },
+  "香港大学-人工智能": {
+    "xiaohongshu_posts": [],
+    "zhihu_posts": [
+      {
+        "title": "港大新增人工智能领域硕士专业！落地上海张江校区，10月开申！",
+        "publish_date": "09-09",
+        "likes": "2",
+        "answers": "-",
+        "url": "https://zhuanlan.zhihu.com/p/1948764882892752812",
+        "summary": "计算机科学理科硕士DeltaX MSc(CompSc) AI x Web3 Stream DeltaX 是香港大学计算与数据科学学院（CDS）上海张江校区设立的1年制计算机科学理学硕士项目..."
+      }
+    ],
+    "summary": {
+      "项目特点": "1. **竞争激烈**：这个项目非常卷，录取概率4成左右\n2. **录取时间**：会录取的话就是在2月底之前\n3. **跨学科项目**：由数学系、统计与精算科学系及计算机科学系联合开设的跨学科项目"
+    }
+  }
+}
+

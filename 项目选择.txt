@@ -1,0 +1,46 @@
+ntu 选3个
+4.NTU MSc Analytics (实际上就是数据分析）【未匹配到CSV】
+https://www.ntu.edu.sg/spms/about-us/mathematics/grad/msc-in-analytics 
+IELTS: 6.0
+
+7.NTU MComp Applied Artificial Intelligence(MSAI)【已匹配：南洋理工大学,人工智能理学硕士】
+https://www.ntu.edu.sg/computing/admissions/graduate-programmes/detail/master-of-computing-in-applied-ai-mcaai
+IELTS: 6.0+
+
+8.NTU Modelling and Simulation【未匹配到CSV】
+https://www.ntu.edu.sg/spms/about-us/mathematics/grad/msc-in-modelling-and-simulation 
+IELTS: 6.0+
+
+hku：cs ai；
+计算机理学硕士（通识方向）| MSc in Computer Science - General Stream【已匹配：香港大学,计算机科学与技术通识方向】
+https://admissions.hku.hk/tpg/programme/master-science-computer-science-1
+
+人工智能理学硕士  - MSc Artificial Intelligence【已匹配：香港大学,人工智能】
+https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-science-in-artificial-intelligence-sci&mode=0
+
+cuhk 信息工程 cs ；
+信息工程理学硕士-MSc Information Engineering【已匹配：香港中文大学,信息工程理学硕士】
+https://www.gs.cuhk.edu.hk/admissions/programme/engineering#msc-in-information-engineering
+
+计算机理学硕士-MSc in Computer Science 【已匹配：香港中文大学,计算机科学与硕士】
+https://www.gs.cuhk.edu.hk/admissions/programme/engineering#msc-in-computer-scIence
+
+科大 IT
+信息技术理学硕士-MSc Information Technology 【未匹配到CSV】
+https://seng.hkust.edu.hk/academics/taught-postgraduate/msc-it
+
+再从港三新二 这俩文档里面的全部项目 选3个：
+NUS:
+计算硕士（计算机科学方向）|  Master of Computing - Computer Science
+Specialisation【未匹配到CSV】
+https://masters.nus.edu.sg/programmes/master-of-computing/mcomp---computer-science-specialisation
+IELTS: 6.0+
+
+人工智能系统科技硕士 | Master of Technology in Artificial Intelligence Systems  
+Institute of Systems Science(ISS)【未匹配到CSV】
+https://www.iss.nus.edu.sg/graduate-programmes/programme/detail/master-of-technology-in-artificial-intelligence-systems
+
+科大
+人工智能理学硕士 - MSc Artificial Intelligence 【未匹配到CSV】
+https://prog-crs.hkust.edu.hk/pgprog/2025-26/msc-ai
+IELTS：Overall score: 6.5 and All sub-score: 5.5 *
