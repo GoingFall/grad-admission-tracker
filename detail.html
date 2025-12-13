@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>项目详情 - 申请项目信息</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>项目详情</h1>
+            <a href="index.html" class="back-link">← 返回列表</a>
+        </div>
+    </header>
+
+    <main class="container">
+        <div id="loading" class="loading">加载中...</div>
+        <div id="error" class="error" style="display: none;"></div>
+        
+        <div id="project-detail" style="display: none;">
+            <!-- 项目基本信息 -->
+            <section class="detail-section">
+                <h2 id="project-title"></h2>
+                <div class="project-meta">
+                    <div class="meta-item">
+                        <span class="meta-label">大学：</span>
+                        <span id="project-university"></span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">英文名称：</span>
+                        <span id="project-english-name"></span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">录取概率：</span>
+                        <span id="project-admission-rate" class="admission-rate"></span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">重要日期：</span>
+                        <span id="project-important-date"></span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 申请详情 -->
+            <section class="detail-section">
+                <h3>申请详情</h3>
+                <div class="detail-grid">
+                    <div class="detail-item">
+                        <strong>申请截止日期：</strong>
+                        <span id="project-deadline"></span>
+                    </div>
+                    <div class="detail-item">
+                        <strong>IELTS要求：</strong>
+                        <span id="project-ielts"></span>
+                    </div>
+                    <div class="detail-item">
+                        <strong>学费信息：</strong>
+                        <span id="project-tuition"></span>
+                    </div>
+                    <div class="detail-item">
+                        <strong>项目时长：</strong>
+                        <span id="project-duration"></span>
+                    </div>
+                    <div class="detail-item full-width">
+                        <strong>申请要求：</strong>
+                        <p id="project-requirements"></p>
+                    </div>
+                    <div class="detail-item full-width">
+                        <strong>详细描述：</strong>
+                        <p id="project-description"></p>
+                    </div>
+                    <div class="detail-item full-width">
+                        <strong>项目URL：</strong>
+                        <a id="project-url" href="#" target="_blank" rel="noopener noreferrer"></a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 社交媒体信息 -->
+            <section class="detail-section" id="social-media-section" style="display: none;">
+                <h3>社交媒体信息</h3>
+                
+                <!-- 小红书 -->
+                <div id="xiaohongshu-section" style="display: none;">
+                    <h4>小红书搜索结果</h4>
+                    <div id="xiaohongshu-posts" class="posts-list"></div>
+                </div>
+
+                <!-- 知乎 -->
+                <div id="zhihu-section" style="display: none;">
+                    <h4>知乎搜索结果</h4>
+                    <div id="zhihu-posts" class="posts-list"></div>
+                </div>
+
+                <!-- 关键信息总结 -->
+                <div id="summary-section" style="display: none;">
+                    <h4>关键信息总结</h4>
+                    <div id="summary-content" class="summary-content"></div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 申请项目信息</p>
+        </div>
+    </footer>
+
+    <script src="js/detail.js"></script>
+</body>
+</html>
+
