@@ -72,3 +72,32 @@ htmlcov/
 docs/_build/
 site/
 
+# 验证和临时报告
+验证报告.md
+
+# 办公软件临时文件
+*.wps
+*.doc
+*.docx
+*.xls
+*.xlsx
+*.ppt
+*.pptx
+
+# 图片文件（如果需要忽略）
+# *.png
+# *.jpg
+# *.jpeg
+# *.gif
+
+# 浏览器日志
+browser-logs/
+*.log
+
+# 数据文件（如果需要忽略某些）
+# *.csv
+
+# 计划文件
+.cursor/plans/
+plans/
+

@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>项目详情 - 待选择项目</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* 紫色主题样式 */
+        body {
+            background: linear-gradient(135deg, #9333ea 0%, #7c3aed 100%);
+            min-height: 100vh;
+        }
+        header {
+            background: linear-gradient(135deg, #9333ea 0%, #7c3aed 100%);
+            color: white;
+            padding: 2rem 0;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        header h1 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+        .back-link {
+            color: white;
+            text-decoration: none;
+            font-size: 0.9rem;
+            opacity: 0.9;
+            transition: opacity 0.2s;
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.5rem 1rem;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 0.375rem;
+        }
+        .back-link:hover {
+            opacity: 1;
+            background: rgba(255, 255, 255, 0.3);
+        }
+        main {
+            background-color: #f8fafc;
+            padding: 2rem 0;
+            min-height: calc(100vh - 200px);
+        }
+        .loading {
+            text-align: center;
+            padding: 3rem;
+            color: #64748b;
+            font-size: 1.1rem;
+        }
+        .error {
+            text-align: center;
+            padding: 2rem;
+            color: #ef4444;
+            background: white;
+            border-radius: 0.5rem;
+            border: 2px solid #fee2e2;
+            margin: 2rem 0;
+        }
+        .detail-section {
+            background: white;
+            border-radius: 0.75rem;
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+            border: 2px solid #a855f7;
+        }
+        .detail-section h2 {
+            color: #9333ea;
+            margin-bottom: 1rem;
+            font-size: 1.75rem;
+        }
+        .detail-section h3 {
+            color: #7c3aed;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+            border-bottom: 2px solid #a855f7;
+            padding-bottom: 0.5rem;
+        }
+        .detail-section h4 {
+            color: #9333ea;
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+            font-size: 1.25rem;
+        }
+        .project-meta {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        .meta-item {
+            display: flex;
+            flex-direction: column;
+            gap: 0.25rem;
+        }
+        .meta-label {
+            font-weight: 600;
+            color: #64748b;
+            font-size: 0.875rem;
+        }
+        .meta-item span:not(.meta-label) {
+            color: #1e293b;
+            font-size: 1rem;
+        }
+        .admission-rate {
+            font-weight: 600;
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            display: inline-block;
+        }
+        .admission-rate.high {
+            background-color: #d1fae5;
+            color: #065f46;
+        }
+        .admission-rate.medium {
+            background-color: #fef3c7;
+            color: #92400e;
+        }
+        .admission-rate.low {
+            background-color: #fee2e2;
+            color: #991b1b;
+        }
+        .detail-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+        .detail-item {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+        .detail-item.full-width {
+            grid-column: 1 / -1;
+        }
+        .detail-item strong {
+            color: #9333ea;
+            font-size: 0.9rem;
+        }
+        .detail-item p {
+            color: #1e293b;
+            line-height: 1.6;
+            margin: 0;
+        }
+        .detail-item a {
+            color: #9333ea;
+            text-decoration: none;
+            word-break: break-all;
+        }
+        .detail-item a:hover {
+            text-decoration: underline;
+        }
+        .posts-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        .post-item {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-left: 4px solid #a855f7;
+            border-radius: 0.5rem;
+            padding: 1rem;
+            transition: all 0.2s;
+        }
+        .post-item:hover {
+            background: #f1f5f9;
+            border-left-color: #9333ea;
+        }
+        .post-title {
+            font-weight: 600;
+            color: #1e293b;
+            margin-bottom: 0.5rem;
+            font-size: 1rem;
+        }
+        .post-title a {
+            color: #9333ea;
+            text-decoration: none;
+        }
+        .post-title a:hover {
+            text-decoration: underline;
+        }
+        .post-meta {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            font-size: 0.875rem;
+            color: #64748b;
+        }
+        .post-meta span {
+            display: inline-block;
+        }
+        .post-summary {
+            margin-top: 0.5rem;
+            color: #64748b;
+            font-size: 0.875rem;
+            line-height: 1.5;
+        }
+        .summary-content {
+            margin-top: 1rem;
+        }
+        .summary-content h5 {
+            color: #9333ea;
+            margin-top: 1rem;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+        .summary-content div {
+            color: #1e293b;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+        footer {
+            background: linear-gradient(135deg, #9333ea 0%, #7c3aed 100%);
+            color: white;
+            padding: 1.5rem 0;
+            text-align: center;
+        }
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>项目详情</h1>
+            <a href="tobepicked.html" class="back-link">← 返回列表</a>
+        </div>
+    </header>
+
+    <main class="container">
+        <div id="loading" class="loading">加载中...</div>
+        <div id="error" class="error" style="display: none;"></div>
+        
+        <div id="project-detail" style="display: none;">
+            <!-- 项目基本信息 -->
+            <section class="detail-section">
+                <h2 id="project-title"></h2>
+                <div class="project-meta">
+                    <div class="meta-item">
+                        <span class="meta-label">大学：</span>
+                        <span id="project-university"></span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">英文名称：</span>
+                        <span id="project-english-name"></span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">录取概率：</span>
+                        <span id="project-admission-rate" class="admission-rate"></span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">重要日期：</span>
+                        <span id="project-important-date"></span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 申请详情 -->
+            <section class="detail-section">
+                <h3>申请详情</h3>
+                <div class="detail-grid">
+                    <div class="detail-item">
+                        <strong>申请截止日期：</strong>
+                        <span id="project-deadline"></span>
+                    </div>
+                    <div class="detail-item">
+                        <strong>IELTS要求：</strong>
+                        <span id="project-ielts"></span>
+                    </div>
+                    <div class="detail-item">
+                        <strong>学费信息：</strong>
+                        <span id="project-tuition"></span>
+                    </div>
+                    <div class="detail-item">
+                        <strong>项目时长：</strong>
+                        <span id="project-duration"></span>
+                    </div>
+                    <div class="detail-item full-width">
+                        <strong>申请要求：</strong>
+                        <p id="project-requirements"></p>
+                    </div>
+                    <div class="detail-item full-width">
+                        <strong>详细描述：</strong>
+                        <p id="project-description"></p>
+                    </div>
+                    <div class="detail-item full-width">
+                        <strong>项目URL：</strong>
+                        <a id="project-url" href="#" target="_blank" rel="noopener noreferrer"></a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 社交媒体信息 -->
+            <section class="detail-section" id="social-media-section" style="display: none;">
+                <h3>社交媒体信息</h3>
+                
+                <!-- 小红书 -->
+                <div id="xiaohongshu-section" style="display: none;">
+                    <h4>小红书搜索结果</h4>
+                    <div id="xiaohongshu-posts" class="posts-list"></div>
+                </div>
+
+                <!-- 知乎 -->
+                <div id="zhihu-section" style="display: none;">
+                    <h4>知乎搜索结果</h4>
+                    <div id="zhihu-posts" class="posts-list"></div>
+                </div>
+
+                <!-- 关键信息总结 -->
+                <div id="summary-section" style="display: none;">
+                    <h4>关键信息总结</h4>
+                    <div id="summary-content" class="summary-content"></div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 申请项目信息</p>
+        </div>
+    </footer>
+
+    <script src="js/tobepicked-detail.js"></script>
+</body>
+</html>
+
