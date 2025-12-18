@@ -1,37 +1,5 @@
 [
   {
-    "id": "新加坡国立大学-人工智能与创新理学硕士",
-    "university": "新加坡国立大学",
-    "project_name": "人工智能与创新理学硕士",
-    "english_name": "MSc Artificial Intelligence & Innovation",
-    "admission_rate": "70%+",
-    "important_date": "待查询",
-    "description": "新加坡国立大学人工智能与创新理学硕士项目专注于利用人工智能的力量在不同的行业和企业进行创新，该专业的综合课程为来自科学、技术、工程与数学（STEM）和非 STEM 背景的学生提供人工智能方面的知识和技能，使他们能够在各个领域进行创新，为整个经济和社会的发展做出贡献。新加坡国立大学人工智能与创新理学硕士项目与新加坡政府的新加坡国家人工智能战略 2.0 相一致，为成人学习者提供毕业后的继续教育机会，以跟上行业和工作性质的变化。",
-    "url": "https://masters.nus.edu.sg/programmes/master-of-science-(artificial-intelligence-and-innovation)",
-    "ielts_requirement": "雅思: 6.0",
-    "deadline": "01/11/2025 - 31/01/2026",
-    "requirements": "具有学士学位（偏好 4 年制荣誉学位）；具有 3 年制（非荣誉）学士学位的申请者需要具备至少 1 年工作经验；特定的选修课程可能要求具备基本编程能力",
-    "tuition": "S$54,000 (不含GST) / S$58,860 (含9%GST)",
-    "duration": "1 年",
-    "status": "tobepicked"
-  },
-  {
-    "id": "新加坡国立大学-工程设计与创新理学硕士",
-    "university": "新加坡国立大学",
-    "project_name": "工程设计与创新理学硕士",
-    "english_name": "MSc Engineering Design & Innovation",
-    "admission_rate": "保底",
-    "important_date": "待查询",
-    "description": "新加坡国立大学工程设计与创新理学硕士(MSc EDI)是为迎接 21 世纪的挑战而开发的独特项目，专为已经在各自学科具备应用型知识的专业人士设计，旨在培养学生共同合作，充分发挥他们的创造力和热情以解决社会挑战，如环境可持续性、全球变暖、垃圾超载、交通拥堵等。",
-    "url": "https://masters.nus.edu.sg/programmes/master-of-science-in-engineering-design---innovation",
-    "ielts_requirement": "雅思: 6.0",
-    "deadline": "2025-10-01 - 2026-02-28",
-    "requirements": "具有学士学位（偏好荣誉学位），需要工程、计算机、商业研究、工业设计或同等学科背景；任何原型制作方面的重要经验都将被考虑；设计作品集（如有）也将被考虑",
-    "tuition": "S$57,770",
-    "duration": "1 年",
-    "status": "tobepicked"
-  },
-  {
     "id": "香港科技大学-人工智能理学硕士",
     "university": "香港科技大学",
     "project_name": "人工智能理学硕士",
@@ -80,22 +48,6 @@
     "status": "tobepicked"
   },
   {
-    "id": "香港科技大学-数据驱动建模理学硕士",
-    "university": "香港科技大学",
-    "project_name": "数据驱动建模理学硕士",
-    "english_name": "MSc Data-Driven Modeling",
-    "admission_rate": "70%",
-    "important_date": "待查询",
-    "description": "香港科技大学数据驱动建模理学硕士项目由物理系和数学系联合开设，旨在培养下一代在解决问题和逻辑思维方面的强大技能，使他们成为数据科学领域的能手。该专业为学生提供分析大量数据和从中提取重要特征的实践经验，从而为理解复杂情况提供有价值的见解，促进企业、行业和服务的智能决策。",
-    "url": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-ddm",
-    "ielts_requirement": "雅思: 6.5/5.5",
-    "deadline": "开放：2025-09-01 Round 1: 2025-11-15 Round 2: 2026-02-15 Round 3: 2026-04-15",
-    "requirements": "具有学士学位或同等学历，需要：理工科背景学士学位；或其他学科背景学士学位，同时具备计算相关领域的相关工作经验以及掌握至少一门计算机语言的工作知识并受过微积分和线性代数的基础培训",
-    "tuition": "HK$260,000",
-    "duration": "1 年",
-    "status": "tobepicked"
-  },
-  {
     "id": "南洋理工大学-应用人工智能计算硕士",
     "university": "南洋理工大学",
     "project_name": "应用人工智能计算硕士",
@@ -109,22 +61,6 @@
     "requirements": "具有南洋理工大学认可的本科学位，具备至少 2 年工作经验者优先考虑",
     "tuition": "S$65,400",
     "duration": "1 年",
-    "status": "tobepicked"
-  },
-  {
-    "id": "南洋理工大学-企业人工智能理学硕士",
-    "university": "南洋理工大学",
-    "project_name": "企业人工智能理学硕士",
-    "english_name": "MSc in Enterprise Artificial Intelligence",
-    "admission_rate": "83%",
-    "important_date": "待查询",
-    "description": "南洋理工大学企业人工智能理学硕士课程旨在通过满足围绕以业务为中心的人工智能技能、非技术领导者的人工智能素养以及负责任的人工智能治理不断增长的学习需求，解决关键的行业需求和人才缺口，它还通过人工智能产品管理和无/低代码平台独特地解决了应用创新问题。相对于现有的人工智能和数字化转型产品，该项目在培养新一代\"精通人工智能\"的专业人士和商业领袖方面是独一无二的，他们可以推动企业人工智能整合，实现战略价值。",
-    "url": "https://www.ntu.edu.sg/education/graduate-programme/master-of-science-in-enterprise-artificial-intelligence",
-    "ielts_requirement": "雅思: 6.0",
-    "deadline": "2025-11-01 - 2026-03-31",
-    "requirements": "具有认可机构颁发的荣誉学士学位或同等学历，不限专业背景；该项目也欢迎具有较长工作经历的职业中期专业人士",
-    "tuition": "S$57,770",
-    "duration": "1 年，8 月开学",
     "status": "tobepicked"
   }
 ]
