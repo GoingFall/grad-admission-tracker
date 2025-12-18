@@ -80,10 +80,11 @@ python convert_data.py
 1. 将项目上传到GitHub仓库
 2. 进入仓库的 Settings 页面
 3. 找到 Pages 设置
-4. 选择 Source 为 "main" 分支（或你的主分支）
-5. 选择文件夹为 "/web"（重要：必须选择web目录）
-6. 点击 Save
-7. 等待几分钟，GitHub会生成你的网站地址：`https://你的用户名.github.io/仓库名/`
+4. 选择 Source 为 "Deploy from a branch"
+5. 选择分支为 "master"（或你的主分支）
+6. 选择文件夹为 "/ (root)"（重要：必须选择根目录）
+7. 点击 Save
+8. 等待几分钟，GitHub会生成你的网站地址：`https://你的用户名.github.io/仓库名/`
 
 ### 方法二：使用Git命令行
 
